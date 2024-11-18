@@ -1,0 +1,10 @@
+services:
+  consumer-ui:
+    image: consumer-ui
+    build: .
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/home/deco/consumer-ui
+    ports:
+      - "3000:3000"
